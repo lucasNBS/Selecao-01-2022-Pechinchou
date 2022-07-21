@@ -1,0 +1,19 @@
+.container {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: #F3F5F6;
+}
+
+#date, #local, #time {
+  display: inline;
+  margin: 0 1rem 0 0;
+}
+
+#description {
+  margin-top: 1.25rem;
+  overflow-wrap: break-word;
+  border-top: 1px solid #333;
+}

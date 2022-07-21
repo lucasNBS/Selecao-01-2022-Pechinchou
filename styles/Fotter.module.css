@@ -1,0 +1,11 @@
+.fotter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  padding: 1.2rem;
+  font-weight: bold;
+  font-size: 3vh;
+  height: 20vh;
+}

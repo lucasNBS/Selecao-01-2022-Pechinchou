@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  min-height: 70vh;
+}
+
+body {
+  background-image: url(../public/images/wallpaper.jpg);
+  background-size: cover;
+}

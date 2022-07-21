@@ -1,0 +1,33 @@
+.container {
+  font-size: 1.15rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 50vw;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.container h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.container button {
+  font-size: 1.3rem;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 1.25rem;
+}
+
+.container button:hover {
+  transform: translateY(-3px);
+  background-color: #ddd;
+}
+
+.container .reports {
+  text-align: left;
+}
