@@ -1,18 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
-
 import styles from "../../styles/Navbar.module.css"
 
-export default function Navbar({hasAcess}) {
-
-  function isLogged() {
-    let hasAccess = hasAcess;
-    if (hasAccess == "true") {
-      sessionStorage.setItem("hasAccess", JSON.stringify(hasAccess));
-    } else {
-      sessionStorage.setItem("hasAccess", "false");
-    }
-  }
+export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
@@ -21,10 +9,10 @@ export default function Navbar({hasAcess}) {
       </div>
       <ul>
         <li>
-          <a href="./" onClick={isLogged}>Página inicial</a>
+          <a href="./">Página inicial</a>
         </li>
         <li>
-          <a href="./reports" onClick={isLogged}>Denúncias</a>
+          <a href="./reports">Denúncias</a>
         </li>
       </ul>
     </nav>

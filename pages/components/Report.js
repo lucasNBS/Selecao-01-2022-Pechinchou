@@ -1,13 +1,12 @@
 import style from "../../styles/Report.module.css"
 
-export default function Report({userName, local, date, time, description}) {
+export default function Report({ report }) {
   return (
     <div className={style.container}>
-      <h3 id={style.name}>{userName}</h3>
-      <h4 id={style.local}>{local}</h4>
-      <h4 id={style.date}>{date}</h4>
-      <h4 id={style.time}>{time}</h4>
-      <p id={style.description}>{description}</p>
+      <h4 id={style.loca}>{report.local}</h4>
+      <h4 id={style.dat}>{report.date}</h4>
+      <h4 id={style.tim}>{report.time}</h4>
+      <p id={style.descriptio}>{report.description}</p>
     </div>
   )
 }
