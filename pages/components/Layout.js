@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 
 import Head from "next/head";
 
-export default function Layout({children, hasAcces}) {
+export default function Layout({children}) {
   return (
     <>
       <Head>
-        <Navbar hasAcess={hasAcces}/>
+        <Navbar />
       </Head>
       <main className="content">
         {children}

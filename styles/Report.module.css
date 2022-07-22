@@ -7,12 +7,12 @@
   background-color: #F3F5F6;
 }
 
-#date, #local, #time {
+#dat, #loca, #tim {
   display: inline;
   margin: 0 1rem 0 0;
 }
 
-#description {
+#descriptio {
   margin-top: 1.25rem;
   overflow-wrap: break-word;
   border-top: 1px solid #333;

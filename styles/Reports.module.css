@@ -31,3 +31,65 @@
 .container .reports {
   text-align: left;
 }
+
+.post {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.postcontent {
+  text-align: center;
+  display: block;
+  border-radius: 20px;
+  margin: 100px auto;
+  background-color: #FFF;
+  width: 40%;
+  animation: show 0.3s ease-in;
+}
+
+@keyframes show {
+  from { transform: scale(0) }
+  to { transform: scale(1) }
+}
+
+.postcontent h3 {
+  padding: 1rem;
+}
+
+#reportdescription {
+  width: 80%;
+  min-height: 200px;
+}
+
+.time label input{
+  display: inline-block;
+  width: 30%;
+  margin: 0.5rem;
+}
+
+.local label input {
+  display: inline-block;
+  width: 15%;
+  margin: 0.5rem;
+}
+
+.postcontent button {
+  font-size: 1.3rem;
+  margin: 1.2rem;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.postcontent button:hover {
+  transform: translateY(-3px);
+  background-color: #ddd;
+}

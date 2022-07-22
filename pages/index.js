@@ -3,9 +3,8 @@ import Layout from './components/Layout';
 
 export default function Home() {
 
-  let users = [{name:"eu", cpf:"", email:"", password:"123"}];
-  let hasAccess;
-
+  let users = [{name:"Lucas", cpf:"123.456.789-12", email:"lucas@gmail.com", password:"123456789"}];
+  
   function handleCadastro() {
     document.getElementsByTagName('div')[3].style.display="block";
     getUsers()
@@ -57,9 +56,6 @@ export default function Home() {
       } else {
         alert("Conta acessada");
         handleClose()
-        hasAccess = true;
-        sessionStorage.setItem("hasAccess", JSON.stringify(hasAccess));
-        hasAccess = JSON.parse(sessionStorage.getItem("hasAccess"));
       }
     }    
   }
@@ -75,7 +71,7 @@ export default function Home() {
   
   return (
     <>
-      <Layout hasAcces={hasAccess}>
+      <Layout>
         <div className={styles.contentcontainer}>
           <h2>SOBRE O SITE</h2>
             <article className={styles.contentcontainercrimes}>
